@@ -1,0 +1,8 @@
+{
+    "STEAM_CMD_PATH": "~/Steam/steamcmd.sh",
+    "STEAM_USER": "mrgtadd1",
+    "STEAM_PASS": "",
+    "MODS_PATH": "~/Arma/mods/",
+    "TEMP_MODS_PATH": "./mods/",
+    "GAME_ID": "107410"
+}
