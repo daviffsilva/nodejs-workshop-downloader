@@ -19,7 +19,7 @@ const downloadMod = function(modId){
     });
 }
 
-downloadMods('463939057');
+downloadMods('aaa');
 
 // exec('dir', (error, stdout, stderr) => {
     
