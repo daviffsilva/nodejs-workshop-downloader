@@ -14,8 +14,13 @@ const downloadMod = function(modId){
     console.log(command);
     child_process.exec(command, (error, stdout, stderr) => {
     // child_process.exec(`dir -a`, (error, stdout, stderr) => {
-        console.log('teste');
-        console.log(error, stderr, stdout);
+        if(error){
+            console.error("Não foi possível baixar o mod: " + modId);
+            console.log("Tentando novamente");
+            downloadMod(modId);
+        }else{
+            console.log("Mod " + modId + " baixado");
+        }
     });
 }
 
