@@ -11,8 +11,8 @@ const downloadMods = function(mods, separator = ','){
 
 const downloadMod = function(modId){
     const command = `${CONFIG.STEAM_CMD_PATH} +login anonymous +force_install_dir ${CONFIG.TEMP_MODS_PATH} +workshop_download_item ${CONFIG.GAME_ID} ${modId} validate +quit`;
-
-    let commandRun = child_process.spawn(command.split(' ')[0], command.split(' ').splice(1));
+//, command.split(' ').splice(1)
+    let commandRun = child_process.spawn(command.split(' ')[0]);
 
     commandRun.stdout.on('data', function (data) {
         console.log('stdout: ' + data.toString());
