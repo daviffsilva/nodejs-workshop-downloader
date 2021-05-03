@@ -19,6 +19,8 @@ const downloadMod = function(modId){
         result = child_process.execSync(command);
         console.log("Mod " + modId + " baixado");
     }catch (e){
+        console.log();
+        console.error(e);
         console.error("Não foi possível baixar o mod: " + modId);
         console.log("Tentando novamente");
         downloadMod(modId);
