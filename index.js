@@ -1,4 +1,5 @@
 const child_process = require("child_process");
+const { exec } = require("node:child_process");
 const CONFIG = require("./config.json");
 
 const downloadMods = function(mods, separator = ','){
@@ -37,7 +38,7 @@ const downloadMod = function(modId){
 }
 
 // downloadMods('aaa');
-downloadMods('843425103,843593391,843577117');
+downloadMods('450814997,463939057,1940589429,2068356312,620019431,769440155,632435682,2058554822,1393068220,708250744,1224892496,2162749089,782415569,1753435554,570118882,333310405,1267657613,2215872933');
 
 // exec('dir', (error, stdout, stderr) => {
     
