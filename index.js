@@ -1,5 +1,4 @@
 const child_process = require("child_process");
-const { exec } = require("node:child_process");
 const CONFIG = require("./config.json");
 
 const downloadMods = function(mods, separator = ','){
