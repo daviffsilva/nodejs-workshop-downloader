@@ -37,7 +37,7 @@ const downloadMod = function(modId){
 }
 
 // downloadMods('aaa');
-downloadMods('2058554822');
+downloadMods('620260972,1858075458');
 
 // exec('dir', (error, stdout, stderr) => {
     
